@@ -1,0 +1,712 @@
+{
+  "Meng2026Mamba-GTC": {
+    "ENTRYTYPE": "article",
+    "ID": "Meng2026Mamba-GTC",
+    "title": "Mamba-GTC: Cross-view contrastive learning with state space modeling for heterogeneous graph representation",
+    "author": "Meng, Fanchao and Zhao, Shuo and Guo, Zhongwen and Lan, Yujun and Pang, Bo",
+    "year": "2025",
+    "journal": "Knowledge-Based Systems",
+    "publisher": "Elsevier"
+  },
+  "aghaee2024graph": {
+    "ENTRYTYPE": "article",
+    "ID": "aghaee2024graph",
+    "title": "Graph Neural Network Representation of State Space Models of Metabolic Pathways",
+    "author": "Aghaee, Mohammad and Krau, Stephane and Tamer, Melih and Budman, Hector",
+    "year": "2024",
+    "journal": "IFAC-PapersOnLine",
+    "publisher": "Elsevier"
+  },
+  "ahmad2025graphmamba": {
+    "ENTRYTYPE": "article",
+    "ID": "ahmad2025graphmamba",
+    "title": "Graphmamba: Graph tokenization mamba for hyperspectral image classification",
+    "author": "Ahmad, Muhammad and Mazzara, Manuel and Distefano, Salvatore and Khan, Adil Mehmood and Butt, Muhammad Hassaan Farooq and Usama, Muhammad and Hong, Danfeng",
+    "year": "2025",
+    "journal": "IEEE Transactions on Emerging Topics in Computing",
+    "publisher": "IEEE"
+  },
+  "ali2025hidden": {
+    "ENTRYTYPE": "inproceedings",
+    "ID": "ali2025hidden",
+    "title": "The hidden attention of mamba models",
+    "author": "Ali, Ameen Ali and Zimerman, Itamar and Wolf, Lior",
+    "year": "2025",
+    "booktitle": "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)"
+  },
+  "atitallah2025ids": {
+    "ENTRYTYPE": "article",
+    "ID": "atitallah2025ids",
+    "title": "IDS--GraphMamba: A Markov-Enhanced Graph Mamba Framework for Real-Time Intrusion Detection in IoMT Edge Networks",
+    "author": "Atitallah, Safa Ben and Driss, Maha and Boulila, Wadii",
+    "year": "2025",
+    "journal": "Computer Networks",
+    "publisher": "Elsevier"
+  },
+  "audibert2020usad": {
+    "ENTRYTYPE": "inproceedings",
+    "ID": "audibert2020usad",
+    "title": "Usad: Unsupervised anomaly detection on multivariate time series",
+    "author": "Audibert, Julien and Michiardi, Pietro and Guyard, Fr{\\'e}d{\\'e}ric and Marti, S{\\'e}bastien and Zuluaga, Maria A",
+    "year": "2020",
+    "booktitle": "Proceedings of the 26th ACM SIGKDD international conference on knowledge discovery \\& data mining"
+  },
+  "behrouz2023admire++": {
+    "ENTRYTYPE": "inproceedings",
+    "ID": "behrouz2023admire++",
+    "title": "ADMIRE++: Explainable anomaly detection in the human brain via inductive learning on temporal multiplex networks",
+    "author": "Behrouz, Ali and Seltzer, Margo",
+    "year": "2023",
+    "booktitle": "ICML 3rd Workshop on Interpretable Machine Learning in Healthcare (IMLH)"
+  },
+  "behrouz2023learning": {
+    "ENTRYTYPE": "inproceedings",
+    "ID": "behrouz2023learning",
+    "title": "Learning Temporal Higher-order Patterns to Detect Anomalous Brain Activity",
+    "author": "Behrouz, Ali and Hashemi, Farnoosh",
+    "year": "2023",
+    "booktitle": "Machine Learning for Health (ML4H)"
+  },
+  "behrouz2024best": {
+    "ENTRYTYPE": "article",
+    "ID": "behrouz2024best",
+    "title": "Best of both worlds: Advantages of hybrid graph sequence models",
+    "author": "Behrouz, Ali and Parviz, Ali and Karami, Mahdi and Sanford, Clayton and Perozzi, Bryan and Mirrokni, Vahab",
+    "year": "2024",
+    "journal": "arXiv preprint arXiv:2411.15671"
+  },
+  "behrouz2024brain": {
+    "ENTRYTYPE": "inproceedings",
+    "ID": "behrouz2024brain",
+    "title": "Brain-Mamba: Encoding Brain Activity via Selective State Space Models.",
+    "author": "Behrouz, Ali and Hashemi, Farnoosh",
+    "year": "2024",
+    "booktitle": "CHIL"
+  },
+  "behrouz2024graph": {
+    "ENTRYTYPE": "inproceedings",
+    "ID": "behrouz2024graph",
+    "title": "Graph mamba: Towards learning on graphs with state space models",
+    "author": "Behrouz, Ali and Hashemi, Farnoosh",
+    "year": "2024",
+    "booktitle": "Proceedings of the 30th ACM SIGKDD Conference on Knowledge Discovery and Data Mining"
+  },
+  "chen2026ccmamba": {
+    "ENTRYTYPE": "article",
+    "ID": "chen2026ccmamba",
+    "title": "CCMamba: Topologically-Informed Selective State-Space Networks on Combinatorial Complexes for Higher-Order Graph Learning",
+    "author": "Chen, Jiawen and Shao, Qi and Zhou, Mingtong and Chen, Duxin and Yu, Wenwu",
+    "year": "2026",
+    "journal": "arXiv preprint arXiv:2601.20518"
+  },
+  "chen2026graph": {
+    "ENTRYTYPE": "article",
+    "ID": "chen2026graph",
+    "title": "Graph Mamba Survival Analysis Based on Topology-Aware ordering",
+    "author": "Chen, Yuanfang and Yan, Peiqiang and Shou, Yuntao and Zhao, Qian and Cao, Xiangyong",
+    "year": "2026",
+    "journal": "arXiv preprint arXiv:2606.02602"
+  },
+  "chen2026modeling": {
+    "ENTRYTYPE": "inproceedings",
+    "ID": "chen2026modeling",
+    "title": "Modeling Spatiotemporal Dynamic Shifts for Traffic Cognition: A Fuzzy-based Graph-Mamba Approach",
+    "author": "Chen, Guojin and Liu, Qingqin and An, Jiyao and Rana, Md Sohel and Huang, Yuchen and Yi, Zihang",
+    "year": "2026",
+    "booktitle": "2026 IEEE International Conference on Fuzzy Systems (FUZZ-IEEE)"
+  },
+  "cheng2025transfer": {
+    "ENTRYTYPE": "article",
+    "ID": "cheng2025transfer",
+    "title": "Transfer-Mamba: Selective state space models with spatio-temporal knowledge transfer for few-shot traffic prediction across cities",
+    "author": "Cheng, Shaokang and Qu, Shiru and Zhang, Junxi",
+    "year": "2025",
+    "journal": "Simulation Modelling Practice and Theory",
+    "publisher": "Elsevier"
+  },
+  "choi2024spot": {
+    "ENTRYTYPE": "article",
+    "ID": "choi2024spot",
+    "title": "SpoT-Mamba: Learning Long-Range Dependency on Spatio-Temporal Graphs with Selective State Spaces",
+    "author": "Choi, Jinhyeok and Kim, Heehyeon and An, Minhyeong and Whang, Joyce Jiyoung",
+    "year": "2024",
+    "journal": "arXiv preprint arXiv:2406.11244"
+  },
+  "chu2025tgmn": {
+    "ENTRYTYPE": "article",
+    "ID": "chu2025tgmn",
+    "title": "TGMN: Two-stage graph convolutional mamba network for hyperspectral image classification",
+    "author": "Chu, Yonghe and Cao, Jun and Xia, Junshi and Ding, Weiping",
+    "year": "2025",
+    "journal": "IEEE Transactions on Neural Networks and Learning Systems",
+    "publisher": "IEEE"
+  },
+  "cong2023we": {
+    "ENTRYTYPE": "article",
+    "ID": "cong2023we",
+    "title": "Do we really need complicated model architectures for temporal networks?",
+    "author": "Cong, Weilin and Zhang, Si and Kang, Jian and Yuan, Baichuan and Wu, Hao and Zhou, Xin and Tong, Hanghang and Mahdavi, Mehrdad",
+    "year": "2023",
+    "journal": "arXiv preprint arXiv:2302.11636"
+  },
+  "cui2026mgcm": {
+    "ENTRYTYPE": "article",
+    "ID": "cui2026mgcm",
+    "title": "MGCM: Multi-modal graph convolutional mamba for cancer survival prediction",
+    "author": "Cui, Jiaqi and Li, Yilun and Shen, Dinggang and Wang, Yan",
+    "year": "2026",
+    "journal": "Pattern Recognition",
+    "publisher": "Elsevier"
+  },
+  "dao2024transformers": {
+    "ENTRYTYPE": "article",
+    "ID": "dao2024transformers",
+    "title": "Transformers are SSMs: Generalized models and efficient algorithms through structured state space duality",
+    "author": "Dao, Tri and Gu, Albert",
+    "year": "2024",
+    "journal": "arXiv preprint arXiv:2405.21060"
+  },
+  "ding2024combining": {
+    "ENTRYTYPE": "article",
+    "ID": "ding2024combining",
+    "title": "Combining graph neural network and Mamba to capture local and global tissue spatial relationships in whole slide images",
+    "author": "Ding, Ruiwen and Luong, Kha-Dinh and Rodriguez, Erika and Da Silva, Ana Cristina Araujo Lemos and Hsu, William",
+    "year": "2025",
+    "journal": "Scientific Reports",
+    "publisher": "Nature Publishing Group UK London"
+  },
+  "ding2024dygmamba": {
+    "ENTRYTYPE": "article",
+    "ID": "ding2024dygmamba",
+    "title": "DyGMamba: Efficiently Modeling Long-Term Temporal Dependency on Continuous-Time Dynamic Graphs with State Space Models",
+    "author": "Ding, Zifeng and Li, Yifeng and He, Yuan and Norelli, Antonio and Wu, Jingcheng and Tresp, Volker and Ma, Yunpu and Bronstein, Michael",
+    "year": "2024",
+    "journal": "arXiv preprint arXiv:2408.04713"
+  },
+  "dong2024hamba": {
+    "ENTRYTYPE": "article",
+    "ID": "dong2024hamba",
+    "title": "Hamba: Single-view 3D Hand Reconstruction with Graph-guided Bi-Scanning Mamba",
+    "author": "Dong, Haoye and Chharia, Aviral and Gou, Wenbo and Carrasco, Francisco Vicente and De la Torre, Fernando",
+    "year": "2024",
+    "journal": "Advances in Neural Information Processing Systems"
+  },
+  "dong2025ps": {
+    "ENTRYTYPE": "inproceedings",
+    "ID": "dong2025ps",
+    "title": "PS-Mamba: Spatial-Temporal Graph Mamba for Pose Sequence Refinement",
+    "author": "Dong, Haoye and Lee, Gim Hee",
+    "year": "2025",
+    "booktitle": "2025 IEEE/CVF International Conference on Computer Vision (ICCV)"
+  },
+  "fu2025gladmamba": {
+    "ENTRYTYPE": "inproceedings",
+    "ID": "fu2025gladmamba",
+    "title": "GLADMamba: Unsupervised Graph-Level Anomaly Detection Powered by Selective State Space Model",
+    "author": "Fu, Yali and Li, Jindong and Wang, Qi and Xing, Qianli",
+    "year": "2025",
+    "booktitle": "Joint European Conference on Machine Learning and Knowledge Discovery in Databases"
+  },
+  "gubbala2026m3": {
+    "ENTRYTYPE": "inproceedings",
+    "ID": "gubbala2026m3",
+    "title": "M3-HGMA: A Multi-modal, Multi-agent Hierarchical Graph-Mamba Architecture for Explainable and Adaptive Clinical Intelligence",
+    "author": "Gubbala, Somasekhar",
+    "year": "2026",
+    "booktitle": "International Conference on Frontiers in Advanced Computing and Emerging Intelligent Technologies"
+  },
+  "hamida2018deep": {
+    "ENTRYTYPE": "article",
+    "ID": "hamida2018deep",
+    "title": "3-D deep learning approach for remote sensing image classification",
+    "author": "Hamida, Amina Ben and Benoit, Alexandre and Lambert, Patrick and Amar, Chokri Ben",
+    "year": "2018",
+    "journal": "IEEE Transactions on Geoscience and Remote Sensing",
+    "publisher": "IEEE"
+  },
+  "han2024innovative": {
+    "ENTRYTYPE": "article",
+    "ID": "han2024innovative",
+    "title": "Innovative Mamba and graph transformer framework for superior protein-ligand affinity prediction",
+    "author": "Han, Kaitai and Shi, Chaojing and Wang, Zijun and Liu, Wu and Li, Zhenxing and Wang, Zhenghui and Lei, Lixin and Dai, Ruoyan and Wang, Mengqiu and Zhang, Zhiwei and others",
+    "year": "2024",
+    "journal": "Microchemical Journal",
+    "publisher": "Elsevier"
+  },
+  "he2023generalization": {
+    "ENTRYTYPE": "inproceedings",
+    "ID": "he2023generalization",
+    "title": "A generalization of vit/mlp-mixer to graphs",
+    "author": "He, Xiaoxin and Hooi, Bryan and Laurent, Thomas and Perold, Adam and LeCun, Yann and Bresson, Xavier",
+    "year": "2023",
+    "booktitle": "International conference on machine learning"
+  },
+  "he2025mamba": {
+    "ENTRYTYPE": "inproceedings",
+    "ID": "he2025mamba",
+    "title": "Mamba-Based Graph Convolutional Networks: Tackling Over-Smoothing with Selective State Space",
+    "author": "Xin He and Yili Wang and Wenqi Fan and Xu Shen and Xin Juan and Rui Miao and Xin Wang",
+    "year": "2025",
+    "booktitle": "Proceedings of the Thirty-Fourth International Joint Conference on Artificial Intelligence (IJCAI)",
+    "doi": "10.24963/ijcai.2025/595"
+  },
+  "he2026dual": {
+    "ENTRYTYPE": "inproceedings",
+    "ID": "he2026dual",
+    "title": "Dual Mamba for Node-Specific Representation Learning: Tackling Over-Smoothing with Selective State Space Modeling",
+    "author": "He, Xin and Wang, Yili and Dai, Yiwei and Wang, Xin",
+    "year": "2026",
+    "booktitle": "Proceedings of the AAAI Conference on Artificial Intelligence"
+  },
+  "huang2024can": {
+    "ENTRYTYPE": "article",
+    "ID": "huang2024can",
+    "title": "What Can We Learn from State Space Models for Machine Learning on Graphs?",
+    "author": "Huang, Yinan and Miao, Siqi and Li, Pan",
+    "year": "2024",
+    "journal": "arXiv preprint arXiv:2406.05815"
+  },
+  "kan2022brain": {
+    "ENTRYTYPE": "article",
+    "ID": "kan2022brain",
+    "title": "Brain network transformer",
+    "author": "Kan, Xuan and Dai, Wei and Cui, Hejie and Zhang, Zilong and Guo, Ying and Yang, Carl",
+    "year": "2022",
+    "journal": "Advances in Neural Information Processing Systems"
+  },
+  "kan2022fbnetgen": {
+    "ENTRYTYPE": "inproceedings",
+    "ID": "kan2022fbnetgen",
+    "title": "Fbnetgen: Task-aware gnn-based fmri analysis via functional brain network generation",
+    "author": "Kan, Xuan and Cui, Hejie and Lukemire, Joshua and Guo, Ying and Yang, Carl",
+    "year": "2022",
+    "booktitle": "International Conference on Medical Imaging with Deep Learning"
+  },
+  "kawahara2017brainnetcnn": {
+    "ENTRYTYPE": "article",
+    "ID": "kawahara2017brainnetcnn",
+    "title": "BrainNetCNN: Convolutional neural networks for brain networks; towards predicting neurodevelopment",
+    "author": "Kawahara, Jeremy and Brown, Colin J and Miller, Steven P and Booth, Brian G and Chau, Vann and Grunau, Ruth E and Zwicker, Jill G and Hamarneh, Ghassan",
+    "year": "2017",
+    "journal": "NeuroImage",
+    "publisher": "Elsevier"
+  },
+  "kotoge2026expath": {
+    "ENTRYTYPE": "inproceedings",
+    "ID": "kotoge2026expath",
+    "title": "Targeted pathway inference for biological knowledge bases via graph learning and explanation",
+    "author": "Kotoge, Rikuto and Yang, Ziwei and Chen, Zheng and Dong, Yushun and Matsubara, Yasuko and Sun, Jimeng and Sakurai, Yasushi",
+    "year": "2026",
+    "booktitle": "Proceedings of the AAAI Conference on Artificial Intelligence"
+  },
+  "lawan2024mambaforgcn": {
+    "ENTRYTYPE": "inproceedings",
+    "ID": "lawan2024mambaforgcn",
+    "title": "Enhancing long-range dependency with state space model and Kolmogorov-Arnold networks for aspect-based sentiment analysis",
+    "author": "Lawan, Adamu and Pu, Juhua and Yunusa, Haruna and Umar, Aliyu and Lawan, Muhammad",
+    "year": "2025",
+    "booktitle": "Proceedings of the 31st international conference on computational linguistics"
+  },
+  "li2021braingnn": {
+    "ENTRYTYPE": "article",
+    "ID": "li2021braingnn",
+    "title": "Braingnn: Interpretable brain graph neural network for fmri analysis",
+    "author": "Li, Xiaoxiao and Zhou, Yuan and Dvornek, Nicha and Zhang, Muhan and Gao, Siyuan and Zhuang, Juntang and Scheinost, Dustin and Staib, Lawrence H and Ventola, Pamela and Duncan, James S",
+    "year": "2021",
+    "journal": "Medical Image Analysis",
+    "publisher": "Elsevier"
+  },
+  "li2024dyg": {
+    "ENTRYTYPE": "article",
+    "ID": "li2024dyg",
+    "title": "Dyg-mamba: Continuous state space modeling on dynamic graphs",
+    "author": "Li, Dongyuan and Tan, Shiyin and Zhang, Ying and Jin, Ming and Pan, Shirui and Okumura, Manabu and Jiang, Renhe",
+    "year": "2026",
+    "journal": "Advances in Neural Information Processing Systems"
+  },
+  "li2024state": {
+    "ENTRYTYPE": "article",
+    "ID": "li2024state",
+    "title": "State space models on temporal graphs: A first-principles study",
+    "author": "Li, Jintang and Wu, Ruofan and Jin, Xinzhou and Ma, Boqun and Chen, Liang and Zheng, Zibin",
+    "year": "2024",
+    "journal": "Advances in Neural Information Processing Systems"
+  },
+  "li2024stg": {
+    "ENTRYTYPE": "article",
+    "ID": "li2024stg",
+    "title": "Stg-mamba: Spatial-temporal graph learning via selective state space model",
+    "author": "Li, Lincan and Wang, Hanchen and Zhang, Wenjie and Coster, Adelle",
+    "year": "2024",
+    "journal": "arXiv preprint arXiv:2403.12418"
+  },
+  "lieber2024jamba": {
+    "ENTRYTYPE": "article",
+    "ID": "lieber2024jamba",
+    "title": "Jamba: A hybrid transformer-mamba language model",
+    "author": "Lieber, Opher and Lenz, Barak and Bata, Hofit and Cohen, Gal and Osin, Jhonathan and Dalmedigos, Itay and Safahi, Erez and Meirom, Shaked and Belinkov, Yonatan and Shalev-Shwartz, Shai and others",
+    "year": "2024",
+    "journal": "arXiv preprint arXiv:2403.19887"
+  },
+  "liu2020physical": {
+    "ENTRYTYPE": "article",
+    "ID": "liu2020physical",
+    "title": "Physical-Virtual Collaboration Modeling for Intra-and Inter-Station Metro Ridership Prediction",
+    "author": "Liu, Lingbo and Chen, Jingwen and Wu, Hefeng and Zhen, Jiajie and Li, Guanbin and Lin, Liang",
+    "year": "2020",
+    "journal": "IEEE Transactions on Intelligent Transportation Systems",
+    "publisher": "IEEE"
+  },
+  "liu2023enhancing": {
+    "ENTRYTYPE": "article",
+    "ID": "liu2023enhancing",
+    "title": "Enhancing aspect-based sentiment analysis using a dual-gated graph convolutional network via contextual affective knowledge",
+    "author": "Liu, Hongtao and others",
+    "year": "2023",
+    "journal": "Neurocomputing",
+    "publisher": "Elsevier"
+  },
+  "liu2023spatio": {
+    "ENTRYTYPE": "inproceedings",
+    "ID": "liu2023spatio",
+    "title": "Spatio-Temporal Adaptive Embedding Makes Vanilla Transformer SOTA for Traffic Forecasting",
+    "author": "Liu, Hangchen and Dong, Zheng and Jiang, Renhe and Deng, Jiewen and Deng, Jinliang and Chen, Quanjun and Song, Xuan",
+    "year": "2023",
+    "booktitle": "Proceedings of the 32nd ACM International Conference on Information and Knowledge Management"
+  },
+  "liu2026msgm": {
+    "ENTRYTYPE": "article",
+    "ID": "liu2026msgm",
+    "title": "Msgm: A multi-scale spatiotemporal graph mamba for eeg emotion recognition",
+    "author": "Liu, Hanwen and Gong, Yifeng and Yan, Zuwei and Zhuang, Zeheng and Lu, Jiaxuan",
+    "year": "2026",
+    "journal": "Frontiers in Neuroscience",
+    "publisher": "Frontiers Media SA"
+  },
+  "lu2025mamba": {
+    "ENTRYTYPE": "article",
+    "ID": "lu2025mamba",
+    "title": "Mamba-enhanced disease semantic knowledge graph for interpretable automatic ICD coding",
+    "author": "Lu, Pengli and Dong, Chao and Xue, Jingjin and Gao, Fentang",
+    "year": "2025",
+    "journal": "Journal of biomedical informatics",
+    "publisher": "Elsevier"
+  },
+  "mehrabian2024mamba": {
+    "ENTRYTYPE": "inproceedings",
+    "ID": "mehrabian2024mamba",
+    "title": "Mamba meets financial markets: A graph-mamba approach for stock price prediction",
+    "author": "Mehrabian, Ali and Hoseinzade, Ehsan and Mazloum, Mahdi and Chen, Xiaohong",
+    "year": "2025",
+    "booktitle": "ICASSP 2025-2025 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)"
+  },
+  "mei2021hyperspectral": {
+    "ENTRYTYPE": "article",
+    "ID": "mei2021hyperspectral",
+    "title": "Hyperspectral image classification using attention-based bidirectional long short-term memory network",
+    "author": "Mei, Shaohui and Li, Xingang and Liu, Xiao and Cai, Huimin and Du, Qian",
+    "year": "2021",
+    "journal": "IEEE Transactions on Geoscience and Remote Sensing",
+    "publisher": "IEEE"
+  },
+  "mei2022hyperspectral": {
+    "ENTRYTYPE": "article",
+    "ID": "mei2022hyperspectral",
+    "title": "Hyperspectral image classification using group-aware hierarchical transformer",
+    "author": "Mei, Shaohui and Song, Chao and Ma, Mingyang and Xu, Fulin",
+    "year": "2022",
+    "journal": "IEEE Transactions on Geoscience and Remote Sensing",
+    "publisher": "IEEE"
+  },
+  "moghar2020stock": {
+    "ENTRYTYPE": "article",
+    "ID": "moghar2020stock",
+    "title": "Stock market prediction using LSTM recurrent neural network",
+    "author": "Moghar, Adil and Hamiche, Mhamed",
+    "year": "2020",
+    "journal": "Procedia computer science",
+    "publisher": "Elsevier"
+  },
+  "montagna2024topological": {
+    "ENTRYTYPE": "inproceedings",
+    "ID": "montagna2024topological",
+    "title": "Topological deep learning with state-space models: A mamba approach for simplicial complexes",
+    "author": "Montagna, Marco and Scardapane, Simone and Telyatnikov, Lev",
+    "year": "2025",
+    "booktitle": "2025 International Joint Conference on Neural Networks (IJCNN)"
+  },
+  "pan2024hetegraph": {
+    "ENTRYTYPE": "article",
+    "ID": "pan2024hetegraph",
+    "title": "HeteGraph-Mamba: Heterogeneous Graph Learning via Selective State Space Model",
+    "author": "Pan, Zhenyu and Jeong, Yoonsung and Liu, Xiaoda and Liu, Han",
+    "year": "2024",
+    "journal": "arXiv preprint arXiv:2405.13915"
+  },
+  "phan2022aspect": {
+    "ENTRYTYPE": "article",
+    "ID": "phan2022aspect",
+    "title": "Aspect-level sentiment analysis using CNN over BERT-GCN",
+    "author": "Phan, Huyen Trang and Nguyen, Ngoc Thanh and Hwang, Dosam",
+    "year": "2022",
+    "journal": "IEEE Access",
+    "publisher": "IEEE"
+  },
+  "qu2025cgam": {
+    "ENTRYTYPE": "article",
+    "ID": "qu2025cgam",
+    "title": "CGAM: An end-to-end causality graph attention Mamba network for esophageal pathology grading",
+    "author": "Qu, Yingbo and Zhou, Xiangli and Huang, Pan and Liu, Yanan and Mercaldo, Francesco and Santone, Antonella and Feng, Peng",
+    "year": "2025",
+    "journal": "Biomedical Signal Processing and Control",
+    "publisher": "Elsevier"
+  },
+  "ren2026spatio": {
+    "ENTRYTYPE": "article",
+    "ID": "ren2026spatio",
+    "title": "Spatio-temporal hypergraph-driven evolutionary graph-mamba method for remaining useful life prediction",
+    "author": "Ren, Yonglei and Meng, Zong and Chen, Kai and Sun, Weiliang and Chen, Haoze",
+    "year": "2026",
+    "journal": "Advanced Engineering Informatics",
+    "publisher": "Elsevier"
+  },
+  "shi2025vssd": {
+    "ENTRYTYPE": "inproceedings",
+    "ID": "shi2025vssd",
+    "title": "Vssd: Vision mamba with non-causal state space duality",
+    "author": "Shi, Yuheng and Li, Mingjia and Dong, Minjing and Xu, Chang",
+    "year": "2025",
+    "booktitle": "2025 IEEE/CVF International Conference on Computer Vision (ICCV)"
+  },
+  "sutskever2014sequence": {
+    "ENTRYTYPE": "article",
+    "ID": "sutskever2014sequence",
+    "title": "Sequence to sequence learning with neural networks",
+    "author": "Sutskever, Ilya and Vinyals, Oriol and Le, Quoc V",
+    "year": "2014",
+    "journal": "Advances in neural information processing systems"
+  },
+  "tang2020dependency": {
+    "ENTRYTYPE": "inproceedings",
+    "ID": "tang2020dependency",
+    "title": "Dependency Graph Enhanced Dual-transformer Structure for Aspect-based Sentiment Classification",
+    "author": "Tang, Hao and Ji, Donghong and Li, Chenliang and Zhou, Qiji",
+    "year": "2020",
+    "booktitle": "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics",
+    "doi": "10.18653/v1/2020.acl-main.588",
+    "url": "https://aclanthology.org/2020.acl-main.588"
+  },
+  "tang2023modeling": {
+    "ENTRYTYPE": "inproceedings",
+    "ID": "tang2023modeling",
+    "title": "Modeling multivariate biosignals with graph neural networks and structured state space models",
+    "author": "Tang, Siyi and Dunnmon, Jared A and Liangqiong, Qu and Saab, Khaled K and Baykaner, Tina and Lee-Messer, Christopher and Rubin, Daniel L",
+    "year": "2023",
+    "booktitle": "Conference on Health, Inference, and Learning"
+  },
+  "tang2025spatial": {
+    "ENTRYTYPE": "article",
+    "ID": "tang2025spatial",
+    "title": "Spatial-temporal graph mamba for music-guided dance video synthesis",
+    "author": "Tang, Hao and Shao, Ling and Zhang, Zhenyu and Van Gool, Luc and Sebe, Nicu",
+    "year": "2025",
+    "journal": "IEEE transactions on pattern analysis and machine intelligence",
+    "publisher": "IEEE"
+  },
+  "tang2026graph": {
+    "ENTRYTYPE": "article",
+    "ID": "tang2026graph",
+    "title": "Graph Mamba for Fast Hyperspectral Anomaly Detection",
+    "author": "Tang, Sida and Sun, Le and Xie, Zhuojun and Xie, Ting and Kang, Xudong and Duan, Puhong",
+    "year": "2026",
+    "journal": "IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing",
+    "publisher": "IEEE"
+  },
+  "tian2024air": {
+    "ENTRYTYPE": "article",
+    "ID": "tian2024air",
+    "title": "Air Quality Prediction with Physics-Informed Dual Neural ODEs in Open Systems",
+    "author": "Tian, Jindong and Liang, Yuxuan and Xu, Ronghui and Chen, Peng and Guo, Chenjuan and Zhou, Aoying and Pan, Lujia and Rao, Zhongwen and Yang, Bin",
+    "year": "2024",
+    "journal": "arXiv preprint arXiv:2410.19892"
+  },
+  "wang2022stock": {
+    "ENTRYTYPE": "article",
+    "ID": "wang2022stock",
+    "title": "Stock market index prediction using deep Transformer model",
+    "author": "Wang, Chaojie and Chen, Yuanyuan and Zhang, Shuqi and Zhang, Qiuhui",
+    "year": "2022",
+    "journal": "Expert Systems with Applications",
+    "publisher": "Elsevier"
+  },
+  "wang2024graph": {
+    "ENTRYTYPE": "article",
+    "ID": "wang2024graph",
+    "title": "Graph-mamba: Towards long-range graph sequence modeling with selective state spaces",
+    "author": "Wang, Chloe and Tsepa, Oleksii and Ma, Jun and Wang, Bo",
+    "year": "2024",
+    "journal": "arXiv preprint arXiv:2402.00789"
+  },
+  "wang2024learning": {
+    "ENTRYTYPE": "inproceedings",
+    "ID": "wang2024learning",
+    "title": "Learning dynamic brain network representation based on graph mamba architecture",
+    "author": "Wang, Jingjie and Lang, Jinwei and Yang, Li-Zhuang and Li, Hai",
+    "year": "2024",
+    "booktitle": "2024 IEEE International Conference on Bioinformatics and Biomedicine (BIBM)"
+  },
+  "wang2025mapstsf": {
+    "ENTRYTYPE": "article",
+    "ID": "wang2025mapstsf",
+    "title": "MapsTSF: efficient traffic prediction via hybrid Mamba 2-transformer spatiotemporal modeling and cross adaptive periodic sparse forecasting",
+    "author": "Wang, Bing and Cai, Chaoqi and Zhang, Xingpeng and Zhao, Chunlan and Zhang, Chi and Zhang, Youming",
+    "year": "2025",
+    "journal": "The Journal of Supercomputing",
+    "publisher": "Springer"
+  },
+  "xu2024identifying": {
+    "ENTRYTYPE": "inproceedings",
+    "ID": "xu2024identifying",
+    "title": "Identifying Subphenotypes for Sepsis with Acute Kidney Injury via Multimodal Graph State Space Models",
+    "author": "Xu, Haowei and Shi, Tongyue and Liu, Wentie and Zhao, Huiying and Kong, Guilan",
+    "year": "2024",
+    "booktitle": "Artificial Intelligence and Data Science for Healthcare: Bridging Data-Centric AI and People-Centric Healthcare"
+  },
+  "xu2024packmamba": {
+    "ENTRYTYPE": "inproceedings",
+    "ID": "xu2024packmamba",
+    "title": "PackMamba: Efficient processing of variable-length sequences in mamba training",
+    "author": "Xu, Haoran and Liu, Ziqian and Fu, Rong and Su, Zhongling and Wang, Zerui and Cai, Zheng and Pei, Zhilin and Zhang, Xingcheng",
+    "year": "2024",
+    "booktitle": "European Conference on Computer Vision"
+  },
+  "yang2023ptgb": {
+    "ENTRYTYPE": "inproceedings",
+    "ID": "yang2023ptgb",
+    "title": "PTGB: Pre-Train Graph Neural Networks for Brain Network Analysis",
+    "author": "Yang, Yi and Cui, Hejie and Yang, Carl",
+    "year": "2023",
+    "booktitle": "Proceedings of the Conference on Health, Inference, and Learning",
+    "publisher": "PMLR"
+  },
+  "yang2024graphmamba": {
+    "ENTRYTYPE": "article",
+    "ID": "yang2024graphmamba",
+    "title": "GraphMamba: An efficient graph structure learning vision mamba for hyperspectral image classification",
+    "author": "Yang, Aitao and Li, Min and Ding, Yao and Fang, Leyuan and Cai, Yaoming and He, Yujie",
+    "year": "2024",
+    "journal": "IEEE Transactions on Geoscience and Remote Sensing",
+    "publisher": "IEEE"
+  },
+  "yi2024fouriergnn": {
+    "ENTRYTYPE": "article",
+    "ID": "yi2024fouriergnn",
+    "title": "FourierGNN: Rethinking multivariate time series forecasting from a pure graph perspective",
+    "author": "Yi, Kun and Zhang, Qi and Fan, Wei and He, Hui and Hu, Liang and Wang, Pengyang and An, Ning and Cao, Longbing and Niu, Zhendong",
+    "year": "2024",
+    "journal": "Advances in Neural Information Processing Systems"
+  },
+  "yu2017stgcn": {
+    "ENTRYTYPE": "article",
+    "ID": "yu2017stgcn",
+    "title": "Spatio-Temporal Graph Convolutional Networks: A Deep Learning Framework for Traffic Forecasting",
+    "author": "Yu, Bing and Yin, Haoteng and Zhu, Zhanxing",
+    "year": "2017",
+    "journal": "arXiv preprint arXiv:1709.04875"
+  },
+  "yuan2025dg": {
+    "ENTRYTYPE": "inproceedings",
+    "ID": "yuan2025dg",
+    "title": "Dg-mamba: Robust and efficient dynamic graph structure learning with selective state space models",
+    "author": "Yuan, Haonan and Sun, Qingyun and Wang, Zhaonan and Fu, Xingcheng and Ji, Cheng and Wang, Yongjian and Jin, Bo and Li, Jianxin",
+    "year": "2025",
+    "booktitle": "Proceedings of the AAAI Conference on Artificial Intelligence"
+  },
+  "zhang2024gm": {
+    "ENTRYTYPE": "inproceedings",
+    "ID": "zhang2024gm",
+    "title": "GM-UNet: Graph Mamba UNet for Medical Image Segmentation",
+    "author": "Zhang, Chengcheng and He, Yihao and Li, Wei and Zhang, Jiajia and Cui, Xiaohui",
+    "year": "2024",
+    "booktitle": "2024 5th International Seminar on Artificial Intelligence, Networking and Information Technology (AINIT)"
+  },
+  "zhang2025spatio": {
+    "ENTRYTYPE": "article",
+    "ID": "zhang2025spatio",
+    "title": "Spatio-temporal mamba dynamic graph convolutional recurrent network for traffic prediction",
+    "author": "Zhang, Xiaoyan and Zhang, Yongqin and Meng, Xiangfu",
+    "year": "2025",
+    "journal": "IEEE Transactions on Artificial Intelligence",
+    "publisher": "IEEE"
+  },
+  "zhang2026brainnetworkmamba": {
+    "ENTRYTYPE": "inproceedings",
+    "ID": "zhang2026brainnetworkmamba",
+    "title": "Brain Network Mamba: A Bi-Directional State-Space Model for Brain Network Analysis on rs-fMRI",
+    "author": "Zhang, Li and Huang, Shuo and Ma, Di and Zhang, Daoqiang and Zhang, Li",
+    "year": "2026",
+    "booktitle": "Machine Learning in Medical Imaging: 16th International Workshop, MLMI 2025, Held in Conjunction with MICCAI 2025, Daejeon, South Korea, September 23, 2025, Proceedings",
+    "publisher": "Springer Nature Switzerland",
+    "doi": "10.1007/978-3-032-09513-8_22"
+  },
+  "zhang2026graph": {
+    "ENTRYTYPE": "article",
+    "ID": "zhang2026graph",
+    "title": "Graph mapping mamba network for automated macular edema diagnosis from fundus images",
+    "author": "Zhang, Yiming and Zhu, Hongqing and Qian, Tianwei and Chen, Ning and Xu, Xun and Huang, Bingcang",
+    "year": "2026",
+    "journal": "Information Fusion",
+    "publisher": "Elsevier"
+  },
+  "zhao2024grassnet": {
+    "ENTRYTYPE": "article",
+    "ID": "zhao2024grassnet",
+    "title": "Grassnet: State space model meets graph neural network",
+    "author": "Zhao, Gongpei and Wang, Tao and Jin, Yi and Lang, Congyan and Li, Yidong and Ling, Haibin",
+    "year": "2026",
+    "journal": "Pattern Recognition",
+    "publisher": "Elsevier"
+  },
+  "zhao2025mgf": {
+    "ENTRYTYPE": "article",
+    "ID": "zhao2025mgf",
+    "title": "MGF-GCN: Multimodal interaction Mamba-aided graph convolutional fusion network for semantic segmentation of remote sensing images",
+    "author": "Zhao, Yanfeng and Qiu, Linwei and Yang, Zhenjian and Chen, Yadong and Zhang, Yunjie",
+    "year": "2025",
+    "journal": "Information Fusion",
+    "publisher": "Elsevier"
+  },
+  "zheng2025graphmamba": {
+    "ENTRYTYPE": "article",
+    "ID": "zheng2025graphmamba",
+    "title": "GraphMamba: Whole slide image classification meets graph-driven selective state space model",
+    "author": "Zheng, Tingting and Yao, Hongxun and Zhao, Sicheng and Jiang, Kui and Xiao, Yi",
+    "year": "2025",
+    "journal": "Pattern Recognition",
+    "publisher": "Elsevier"
+  },
+  "zhou2024efficient": {
+    "ENTRYTYPE": "inproceedings",
+    "ID": "zhou2024efficient",
+    "title": "Efficient and Gender-Adaptive Graph Vision Mamba for Pediatric Bone Age Assessment",
+    "author": "Zhou, Lingyu and Yi, Zhang and Zhou, Kai and Xu, Xiuyuan",
+    "year": "2024",
+    "booktitle": "International Conference on Medical Image Computing and Computer-Assisted Intervention"
+  },
+  "zhou2024graph": {
+    "ENTRYTYPE": "inproceedings",
+    "ID": "zhou2024graph",
+    "title": "Graph Convolution Network Based State Space Model for Wireless Traffic Prediction",
+    "author": "Zhou, Hao and Yao, Dunyuan and Chen, Binbin and Yu, Ke and Wu, Xiaofei",
+    "year": "2024",
+    "booktitle": "2024 IEEE Wireless Communications and Networking Conference (WCNC)"
+  },
+  "zhu2025hybrid": {
+    "ENTRYTYPE": "inproceedings",
+    "ID": "zhu2025hybrid",
+    "title": "Hybrid graph mamba: Unlocking non-euclidean potential for accurate polyp segmentation",
+    "author": "Zhu, Yueyue and Lv, Haolin and Chen, Geng and Zhang, Zhonghao and Jiang, Haotian and Xia, Yong",
+    "year": "2025",
+    "booktitle": "International Conference on Medical Image Computing and Computer-Assisted Intervention"
+  }
+}

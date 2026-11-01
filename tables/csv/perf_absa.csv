@@ -1,5 +1,0 @@
-Model,Restaurant14 · Accuracy,Restaurant14 · F1,Laptop14 · Accuracy,Laptop14 · F1,Twitter14 · Accuracy,Twitter14 · F1
-CNN over BERT-GCN,85.25,78.76,78.59,74.76,74.03,72.39
-Dual-gated GCN,83.66,76.73,75.70,72.57,74.87,72.27
-DGEDT,83.90,75.10,76.80,72.30,74.80,73.40
-MambaForGCN,86.68,80.86,81.80,78.59,77.67,76.88

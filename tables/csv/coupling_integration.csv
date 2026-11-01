@@ -1,8 +1,0 @@
-Group,Graph setting,Models,Input,Dynamics,Operator,Standalone,Sequential,Parallel,Embedded
-NR,Static and General-Purpose Graph Models,7,2,3,2,2,0,4,2
-NR,Dynamic and Spatio-Temporal Graph Models,10,4,5,1,5,2,2,1
-NR,Heterogeneous and Higher-Order Graph Models,4,4,0,0,3,0,1,0
-NR,All settings,21,10,8,3,10,2,7,3
-Cross-tabulation D3 level × D4 type (all settings),Input-level,10,,,,5,1,4,0
-Cross-tabulation D3 level × D4 type (all settings),Dynamics-level,8,,,,2,1,3,3
-Cross-tabulation D3 level × D4 type (all settings),Operator-level,3,,,,3,0,0,0

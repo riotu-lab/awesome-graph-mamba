@@ -1,7 +1,0 @@
-Benchmark(s),Domain / task,Graph setting,Main metrics,Representative models,Numeric results
-"Peptides-func, Peptides-struct",General graph learning,Static molecular graphs,"AP, MAE",Graph-Mamba; GMN; GSSC,NR
-"BVFC-MEG, HCP-Mental, HCP-Age",Brain classification,Brain-network / physiological graphs,Accuracy,GraphS4mer; BrainMamba,perf_brain
-"Indian Pines, Salinas, UH2013",Hyperspectral image classification,Spectral–spatial graphs,"OA, AA, Kappa",GraphMamba (HSI),perf_hsi
-"PeMS04, HZMetro, KnowAir",Spatio-temporal forecasting,Traffic / environmental graphs,"RMSE, MAE, MAPE",STG-Mamba,perf_spatiotemporal
-"NASDAQ, NYSE, DJIA",Financial forecasting,Inter-asset graphs,"RMSE, training time",SAMBA,perf_financial
-"Restaurant14, Laptop14, Twitter14",Aspect-based sentiment analysis,Syntactic dependency graphs,"Accuracy, F1-score",MambaForGCN,perf_absa

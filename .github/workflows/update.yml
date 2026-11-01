@@ -3,9 +3,9 @@ name: Build and validate
 on:
   push:
     branches: [main]
-    paths: ["data/**", "source/**", "scripts/**", "tests/**", "README.md", "requirements.txt", ".github/workflows/**"]
+    paths: ["data/**", "scripts/**", "tests/**", "README.md", "requirements.txt", ".github/workflows/**"]
   pull_request:
-    paths: ["data/**", "source/**", "scripts/**", "tests/**", "README.md", "requirements.txt", ".github/workflows/**"]
+    paths: ["data/**", "scripts/**", "tests/**", "README.md", "requirements.txt", ".github/workflows/**"]
   workflow_dispatch:
 
 permissions:
@@ -25,7 +25,7 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Regenerate repository
+      - name: Regenerate website
         run: python scripts/build.py
 
       - name: Unit and integration tests
@@ -37,11 +37,11 @@ jobs:
         run: python scripts/build.py --check
 
       # Pushes to main: regenerate and commit any changes automatically.
-      - name: Regenerate repository (main)
+      - name: Regenerate website (main)
         if: github.event_name != 'pull_request'
         run: python scripts/build.py
 
-      - name: Validate database and outputs
+      - name: Validate database and website
         run: python scripts/validate.py -v
 
       - name: Commit regenerated files
@@ -50,22 +50,10 @@ jobs:
           if [ -n "$(git status --porcelain)" ]; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add -A tables papers docs data/generated README.md
-            git commit -m "chore: regenerate catalogue and tables [skip ci]"
+            git add -A docs data/generated
+            git commit -m "chore: regenerate website [skip ci]"
             git push
           else
             echo "No changes to commit."
           fi
 
-  latex:
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - uses: actions/checkout@v4
-      - name: Compile all LaTeX tables
-        uses: xu-cheng/latex-action@v3
-        with:
-          root_file: all_tables.tex
-          working_directory: tables/latex
-          latexmk_use_lualatex: false
-          args: -pdf -interaction=nonstopmode -halt-on-error

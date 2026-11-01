@@ -8,3 +8,8 @@ __pycache__/
 *.out
 *.pdf
 .venv/
+
+# Manuscript sources stay private while the survey is under review.
+# The build falls back to data/generated/tex_extraction.json and bibliography.json.
+source/main.tex
+source/references.bib

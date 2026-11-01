@@ -19,10 +19,12 @@ SOURCE_TEX = ROOT / "source" / "main.tex"
 SOURCE_BIB = ROOT / "source" / "references.bib"
 DATA = ROOT / "data"
 GENERATED = DATA / "generated"
-TABLES = ROOT / "tables"
-PAPERS_DIR = ROOT / "papers"
+# Committed snapshots used when the private manuscript sources are absent (e.g. in CI).
+SNAPSHOT_EXTRACTION = GENERATED / "tex_extraction.json"
+SNAPSHOT_BIB = GENERATED / "bibliography.json"
+BIB_FIELDS = ("ENTRYTYPE", "ID", "title", "author", "year", "journal", "booktitle", "publisher", "howpublished",
+              "school", "institution", "doi", "eprint", "archiveprefix", "note", "url")
 DOCS = ROOT / "docs"
-README = ROOT / "README.md"
 
 NR = "NR"
 
@@ -68,13 +70,34 @@ def load_data() -> dict:
         "benchmarks": load_yaml(DATA / "benchmarks.yaml"),
         "results": load_yaml(DATA / "results.yaml")["tables"],
         "challenges": load_yaml(DATA / "challenges.yaml")["challenges"],
+        "links": (load_yaml(DATA / "links.yaml") or {}).get("links", {}) if (DATA / "links.yaml").exists() else {},
+        "dataset_links": (load_yaml(DATA / "links.yaml") or {}).get("datasets", {}) if (DATA / "links.yaml").exists() else {},
+        "figures": load_yaml(DATA / "figures.yaml")["figures"] if (DATA / "figures.yaml").exists() else [],
     }
 
 
 # ---------------------------------------------------------------------------
 # BibTeX
 # ---------------------------------------------------------------------------
-def load_bib(path: Path = SOURCE_BIB) -> dict[str, dict]:
+def sources_available() -> bool:
+    """True when the manuscript sources (kept out of the public repository) are present locally."""
+    return SOURCE_TEX.exists() and SOURCE_BIB.exists()
+
+
+def bib_snapshot(bib: dict[str, dict], data: dict) -> dict[str, dict]:
+    """Subset of the bibliography needed to build the repository: only the works referenced in data/,
+    and only the fields the generators read."""
+    keys = {p["key"] for p in data["papers"]}
+    keys |= {k for t in data["results"] for r in t["rows"] for k in str(r.get("key", "")).split(",") if k}
+    keys |= {e["key"] for c in data["challenges"] for e in c["early_work"]}
+    return {k: {f: bib[k][f] for f in BIB_FIELDS if f in bib[k]} for k in sorted(keys) if k in bib}
+
+
+def load_bib(path: Path | None = None) -> dict[str, dict]:
+    """Parse references.bib, or fall back to the committed snapshot when the source is absent."""
+    path = path or SOURCE_BIB
+    if not path.exists():
+        return json.loads(SNAPSHOT_BIB.read_text(encoding="utf-8"))
     import logging
 
     import bibtexparser
@@ -92,7 +115,10 @@ def load_bib(path: Path = SOURCE_BIB) -> dict[str, dict]:
     return entries
 
 
-def bib_duplicate_ids(path: Path = SOURCE_BIB) -> list[str]:
+def bib_duplicate_ids(path: Path | None = None) -> list[str]:
+    path = path or SOURCE_BIB
+    if not path.exists():
+        return []
     ids = re.findall(r"^\s*@\w+\s*\{\s*([^,\s]+)\s*,", path.read_text(encoding="utf-8"), re.M)
     seen, dups = set(), []
     for i in ids:

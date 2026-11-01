@@ -7,15 +7,13 @@ Findings have a severity:
 * ``warning`` – needs attention but does not invalidate the data,
 * ``info``    – informational (e.g., missing DOI in the bibliography).
 
-Used by ``validate.py`` (to fail CI) and ``generate_catalogue.py``
-(to publish ``docs/FLAGS.md``).
+Used by ``build.py`` and ``validate.py`` (to fail CI).
 """
 from __future__ import annotations
 
 import json
 import re
 from dataclasses import dataclass
-from pathlib import Path
 
 from common import DATA, NR, latex_to_text
 
@@ -105,16 +103,16 @@ def reference_findings(data: dict, bib: dict, extraction: dict, bib_dups: list[s
     for p in data["papers"]:
         k = p["key"]
         if k not in bib:
-            out.append(Finding("error", "missing-bib", k, "key not found in references.bib"))
+            out.append(Finding("error", "missing-bib", k, "key not found in the bibliography"))
         if k not in cited:
-            out.append(Finding("error", "not-cited", k, "key is not cited in main.tex"))
+            out.append(Finding("error", "not-cited", k, "key is not cited in the manuscript"))
         for lbl in p.get("sections", []):
             if lbl not in extraction["section_labels"] and not lbl.startswith(("tab:", "fig:", "eq:")):
                 out.append(Finding("error", "bad-label", k, f"manuscript label '{lbl}' does not exist"))
     for k in extraction["cited_but_missing_in_bib"]:
-        out.append(Finding("error", "missing-bib", k, "cited in main.tex but missing from references.bib"))
+        out.append(Finding("error", "missing-bib", k, "cited in the manuscript but missing from the bibliography"))
     for d in bib_dups:
-        out.append(Finding("error", "duplicate-bib", d, "duplicate BibTeX key in references.bib"))
+        out.append(Finding("error", "duplicate-bib", d, "duplicate BibTeX key in the bibliography"))
     # keys referenced in auxiliary data files
     known = set(bib)
     for b in data["benchmarks"]["benchmarks"]:
@@ -125,7 +123,7 @@ def reference_findings(data: dict, bib: dict, extraction: dict, bib_dups: list[s
         for r in t["rows"]:
             for k in str(r.get("key", "")).split(","):
                 if k and k not in known:
-                    out.append(Finding("error", "missing-bib", k, f"result table '{t['id']}' row key not in references.bib"))
+                    out.append(Finding("error", "missing-bib", k, f"result table '{t['id']}' row key not in the bibliography"))
         n = len(t["columns"])
         if len(t["better"]) != n:
             out.append(Finding("error", "result-shape", t["id"], "length of 'better' differs from number of columns"))
@@ -135,7 +133,7 @@ def reference_findings(data: dict, bib: dict, extraction: dict, bib_dups: list[s
     for c in data["challenges"]:
         for e in c["early_work"]:
             if e["key"] not in known:
-                out.append(Finding("error", "missing-bib", e["key"], f"challenge '{c['id']}' early work not in references.bib"))
+                out.append(Finding("error", "missing-bib", e["key"], f"challenge '{c['id']}' early work not in the bibliography"))
     # classified in manuscript but missing from database
     db = {p["key"] for p in data["papers"]}
     for k in extraction["classified_keys"]:
@@ -144,7 +142,7 @@ def reference_findings(data: dict, bib: dict, extraction: dict, bib_dups: list[s
                                                        "(run scripts/extract_papers.py --merge)"))
     n_unc = len(extraction["bib_entries_not_cited"])
     if n_unc:
-        out.append(Finding("info", "uncited-bib", "*", f"{n_unc} references.bib entries are not cited in main.tex: "
+        out.append(Finding("info", "uncited-bib", "*", f"{n_unc} bibliography entries are not cited in the manuscript: "
                                                        + ", ".join(extraction["bib_entries_not_cited"])))
     return out
 
@@ -207,9 +205,9 @@ def completeness_findings(resolved: list[dict]) -> list[Finding]:
         if r["methodology"] in ("", NR) or r["methodology"].startswith("NR"):
             out.append(Finding("warning", "incomplete", k, "methodology not described in the survey"))
         if r["primary_link"] == NR:
-            out.append(Finding("info", "no-link", k, "no DOI/arXiv/URL in references.bib"))
+            out.append(Finding("info", "no-link", k, "no DOI/arXiv/URL in the bibliography"))
         if "et al." in r["authors"]:
-            out.append(Finding("info", "truncated-authors", k, "author list truncated ('and others') in references.bib"))
+            out.append(Finding("info", "truncated-authors", k, "author list truncated ('and others') in the bibliography"))
         m = re.search(r"(19|20)\d{2}", k)
         if m and str(r["year"]) != m.group(0):
             out.append(Finding("info", "key-year", k, f"BibTeX key suggests {m.group(0)} but year field is {r['year']}"))

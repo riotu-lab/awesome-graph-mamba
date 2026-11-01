@@ -1,7 +1,5 @@
 """Integration tests on the real manuscript, database, and generated outputs."""
 import copy
-import csv
-import io
 
 import pytest
 
@@ -41,27 +39,19 @@ def test_outputs_are_up_to_date(built):
     assert not stale_outputs(outputs), "run python scripts/build.py"
 
 
-def test_three_formats_per_table(built):
-    outputs, ctx = built
-    names = {p.relative_to(p.parents[2]).as_posix() for p in outputs}
-    for tid in ctx["tables"]:
-        for fmt, ext in (("markdown", "md"), ("latex", "tex"), ("csv", "csv")):
-            assert f"tables/{fmt}/{tid}.{ext}" in names
-
-
-def test_latex_tables_cite_bibtex_keys(built):
-    outputs, ctx = built
-    tex = next(c for p, c in outputs.items() if p.name == "unified_taxonomy.tex")
-    for r in ctx["resolved"]:
-        if r["taxonomy"]:
-            assert "\\cite{" + r["key"] + "}" in tex
-
-
 def test_missing_values_rendered_nr(built):
+    _, ctx = built
+    rows = [r for r in ctx["tables"]["perf_hsi"].rows if not isinstance(r, tuple)]
+    ab_lstm = next(r for r in rows if r[0].csv == "AB-LSTM")
+    assert ab_lstm[-1].csv == "NR"
+
+
+def test_only_website_outputs_are_generated(built):
     outputs, _ = built
-    rows = list(csv.reader(io.StringIO(next(c for p, c in outputs.items() if p.name == "perf_hsi.csv"))))
-    ab_lstm = next(r for r in rows if r[0] == "AB-LSTM")
-    assert ab_lstm[-1] == "NR"
+    rel = {p.relative_to(p.parents[1]).as_posix() if p.parent.name == "docs" else p.relative_to(p.parents[2]).as_posix()
+           for p in outputs}
+    assert rel == {"docs/index.html", "docs/comparison.html", "data/generated/tex_extraction.json",
+                   "data/generated/bibliography.json"}
 
 
 def test_performance_tables_single_source(built):

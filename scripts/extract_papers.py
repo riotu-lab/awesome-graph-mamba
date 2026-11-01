@@ -19,14 +19,15 @@ modified, so manually verified metadata is preserved across runs.
 from __future__ import annotations
 
 import argparse
+import json
 import re
 import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from common import (  # noqa: E402
-    DATA, GENERATED, SOURCE_BIB, SOURCE_TEX, cite_keys, cite_sections, dump_json,
-    load_bib, load_yaml, section_numbers, strip_comments, write_outputs,
+    DATA, GENERATED, SNAPSHOT_EXTRACTION, SOURCE_BIB, SOURCE_TEX, cite_keys, cite_sections, dump_json,
+    load_bib, load_yaml, section_numbers, sources_available, strip_comments, write_outputs,
 )
 
 CMARK = "\\cmark"
@@ -255,10 +256,15 @@ def merge_stubs(extraction: dict, papers_path: Path = DATA / "papers.yaml") -> l
 
 
 def run(merge: bool = False, write: bool = True) -> dict:
-    tex = SOURCE_TEX.read_text(encoding="utf-8")
-    bib = load_bib()
-    taxonomy = load_yaml(DATA / "taxonomy.yaml")
-    extraction = extract(tex, bib, taxonomy)
+    """Parse the manuscript; without the (private) sources, reuse the committed extraction snapshot."""
+    if sources_available():
+        tex = SOURCE_TEX.read_text(encoding="utf-8")
+        bib = load_bib()
+        taxonomy = load_yaml(DATA / "taxonomy.yaml")
+        extraction = extract(tex, bib, taxonomy)
+    else:
+        extraction = json.loads(SNAPSHOT_EXTRACTION.read_text(encoding="utf-8"))
+        write = False
     if write:
         write_outputs({GENERATED / "tex_extraction.json": dump_json(extraction)})
     if merge:

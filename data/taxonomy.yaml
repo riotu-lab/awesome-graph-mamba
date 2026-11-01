@@ -19,6 +19,8 @@ survey:
     - {name: "Anis Koubaa", orcid: "0000-0003-3787-7423", affiliation: "Alfaisal University"}
   keywords: ["State Space Models", "Selective State Space Models", "Mamba", "Graph Mamba", "Graph Learning", "Graph Serialization"]
   repository: "https://github.com/SafaBAtitallah/awesome-graph-mamba"   # set to the public repo URL (used by the dashboard)
+  abstract: >-
+    Graph Mamba has emerged as a promising approach to modeling long-range dependencies in graph-structured data using selective State Space Models (SSMs). However, existing architectures differ in how they capture graph structure and integrate it into state-space processing. This survey examines these differences through four key design dimensions: tokenization, ordering, graph–SSM coupling, and integration. It reviews architectural developments, applications, and benchmark results, highlighting important trade-offs in structural modeling, efficiency, and predictive performance. The analysis also identifies limitations in experimental comparability, scalability, order sensitivity, and interpretability. These findings provide a clearer understanding of existing approaches and directions for future research in Graph Mamba.
   search_window: "2023 to September 2026"
   databases: ["IEEE Xplore", "ACM Digital Library", "Scopus", "Web of Science", "Google Scholar"]
 

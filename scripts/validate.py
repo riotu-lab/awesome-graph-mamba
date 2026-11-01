@@ -9,7 +9,7 @@ Checks
   * curated D1--D4 and design-pattern labels match the manuscript tables
   * every work classified in a manuscript table is in the database
   * consistency of auxiliary files (benchmarks, results, challenges)
-  * generated outputs (tables, catalogue, README blocks) are up to date
+  * the generated website (docs/) is up to date
 
 Exit status 1 if any error is found. ``--strict`` also fails on warnings.
 """

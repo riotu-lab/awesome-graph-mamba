@@ -1,20 +1,11 @@
-"""Resolve the curated database against the bibliography and manuscript.
+"""Resolve the curated database (data/papers.yaml) against the bibliography and manuscript.
 
-The result (``data/generated/papers.json`` / ``papers.csv``) is the
-machine-readable, fully denormalised view of every reviewed work. It is
-*generated*; edit ``data/papers.yaml`` or ``source/references.bib``
-instead.
+Each resolved record is the fully denormalised view of one reviewed work
+(bibliographic metadata, links, classification, evidence) used by the website.
 """
 from __future__ import annotations
 
-import csv
-import io
-import re
-from pathlib import Path
-
-from common import (
-    GENERATED, NR, bib_links, bib_venue, dump_json, format_authors, latex_to_text, scholar_search,
-)
+from common import NR, bib_links, bib_venue, format_authors, latex_to_text, scholar_search
 
 # Display order of categories
 SETTING_ORDER = ["static_general", "dynamic_spatiotemporal", "heterogeneous_higher_order"]
@@ -63,7 +54,6 @@ def paper_challenges(key: str, challenges: list[dict]) -> list[str]:
 
 
 def resolve(data: dict, bib: dict, extraction: dict) -> list[dict]:
-    taxonomy = data["taxonomy"]
     labels = extraction.get("section_labels", {})
     cite_secs = extraction.get("cited_keys", {})
     resolved = []
@@ -71,6 +61,11 @@ def resolve(data: dict, bib: dict, extraction: dict) -> list[dict]:
         e = bib.get(p["key"], {})
         title = latex_to_text(e.get("title")) or NR
         links = bib_links(e) if e else {}
+        # data/links.yaml fills gaps only: the bibliography's own links always take precedence.
+        extra = data.get("links", {}).get(p["key"], {})
+        for kind, value in extra.items():
+            if not any(links.get(x) for x in ("doi", "arxiv", "url")):
+                links[kind] = {"doi": "https://doi.org/", "arxiv": "https://arxiv.org/abs/", "url": ""}[kind] + value
         primary = links.get("doi") or links.get("arxiv") or links.get("url")
         rec = {
             "key": p["key"],
@@ -115,62 +110,3 @@ def resolve(data: dict, bib: dict, extraction: dict) -> list[dict]:
         }
         resolved.append(rec)
     return resolved
-
-
-def category_of(rec: dict) -> str:
-    """File-level category used for the per-category catalogue pages."""
-    if rec["taxonomy"]:
-        return rec["taxonomy"]["setting"]
-    if rec["application"]:
-        return rec["application"]["domain"]
-    return "discussed"
-
-
-CSV_FIELDS = [
-    "key", "model", "title", "authors", "year", "venue", "doi", "arxiv", "url", "code", "roles",
-    "setting", "d1_tokenization", "d2_ordering", "d3_coupling", "d4_integration",
-    "domain", "subdomain", "task", "graph_construction", "dominant_pattern", "secondary_pattern", "patterns",
-    "precursor", "multimodal", "datasets", "metrics", "complexity", "result_tables", "challenges",
-    "manuscript_sections", "verification_status",
-]
-
-
-def to_csv_rows(resolved: list[dict]) -> list[dict]:
-    rows = []
-    for r in resolved:
-        t = r["taxonomy"] or {}
-        a = r["application"] or {}
-        rows.append({
-            "key": r["key"], "model": r["model"], "title": r["title"], "authors": r["authors"],
-            "year": r["year"], "venue": r["venue"], "doi": r["doi"], "arxiv": r["arxiv"], "url": r["url"],
-            "code": r["code"], "roles": ";".join(r["roles"]),
-            "setting": t.get("setting", NR), "d1_tokenization": t.get("d1", NR), "d2_ordering": t.get("d2", NR),
-            "d3_coupling": ";".join(t.get("d3", [])) or NR, "d4_integration": ";".join(t.get("d4", [])) or NR,
-            "domain": a.get("domain", NR), "subdomain": a.get("subdomain", NR), "task": a.get("task", NR),
-            "graph_construction": a.get("graph_construction", NR),
-            "dominant_pattern": a.get("dominant_pattern", NR), "secondary_pattern": a.get("secondary_pattern", NR),
-            "patterns": ";".join(a.get("patterns", [])) or NR,
-            "precursor": r["precursor"], "multimodal": r["multimodal"],
-            "datasets": ";".join(r["datasets"]) or NR, "metrics": ";".join(r["metrics"]) or NR,
-            "complexity": re.sub(r"\\l?r?vert", "|", r["complexity"]).replace("$", ""),
-            "result_tables": ";".join(r["result_tables"]) or NR, "challenges": ";".join(r["challenges"]) or NR,
-            "manuscript_sections": ";".join(s.split(" ")[0] for s in r["manuscript_sections"]),
-            "verification_status": r["verification"]["status"],
-        })
-    return rows
-
-
-def csv_string(rows: list[dict], fields: list[str]) -> str:
-    buf = io.StringIO()
-    w = csv.DictWriter(buf, fieldnames=fields, lineterminator="\n")
-    w.writeheader()
-    for row in rows:
-        w.writerow({k: row.get(k, NR) for k in fields})
-    return buf.getvalue()
-
-
-def database_outputs(resolved: list[dict]) -> dict[Path, str]:
-    return {
-        GENERATED / "papers.json": dump_json({"n_papers": len(resolved), "papers": resolved}),
-        GENERATED / "papers.csv": csv_string(to_csv_rows(resolved), CSV_FIELDS),
-    }
