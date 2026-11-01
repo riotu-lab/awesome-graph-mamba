@@ -21,19 +21,6 @@ linked to its paper.
 | `docs/` | The generated website, served by GitHub Pages |
 | `tests/` | Data checks and browser tests of the website |
 
-## Rebuild
-
-```bash
-pip install -r requirements.txt
-python scripts/build.py      # regenerate docs/index.html
-python scripts/validate.py   # check the database against the manuscript
-pytest -q
-```
-
-The manuscript sources are not part of this repository; the build uses the snapshots of the manuscript tables and
-bibliography in `data/generated/`. (Placing `main.tex` and `references.bib` in a `source/` folder makes the build refresh
-those snapshots.) On every push to `main`, GitHub Actions rebuilds and validates the site.
-
 ## Citation
 
 ```bibtex
