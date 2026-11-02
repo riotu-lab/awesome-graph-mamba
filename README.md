@@ -5,12 +5,21 @@
 Safa Ben Atitallah · Chaima Ben Rabah · Maha Driss · Wadii Boulila · Anis Koubaa
 *ACM Computing Surveys (under revision)*
 
-### [Open the website →](https://riotu-lab.github.io/awesome-graph-mamba/)
+### [Open the website →](https://safabatitallah.github.io/awesome-graph-mamba/)
 
 The website presents the survey's abstract and research questions, its figures, the D1–D4 taxonomy, statistics on the
-reviewed literature, and the comparison tables, with every reviewed work linked to its paper.
+reviewed literature, and the comparison tables (as dot matrices, heatmaps, cards, and charts), with every reviewed work
+linked to its paper.
 
-The site is a single self-contained page in `docs/`, served by GitHub Pages.
+## Repository
+
+| Path | Content |
+| :--- | :--- |
+| `data/` | Survey database: `papers.yaml` (reviewed works), `taxonomy.yaml` (D1–D4, settings, patterns, abstract), `results.yaml`, `benchmarks.yaml`, `challenges.yaml`, `figures.yaml`, `links.yaml` (paper and dataset links) |
+| `data/generated/` | Snapshots of the manuscript tables and bibliography used to build the site |
+| `scripts/` | Build pipeline; `site_template.html` and `site_figures.py` define the website |
+| `docs/` | The generated website, served by GitHub Pages |
+| `tests/` | Data checks and browser tests of the website |
 
 ## Citation
 
