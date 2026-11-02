@@ -13,3 +13,13 @@ __pycache__/
 # The build falls back to data/generated/tex_extraction.json and bibliography.json.
 source/main.tex
 source/references.bib
+
+# Build pipeline and survey database: kept locally only (the public repository holds the website).
+# Rebuild with: python scripts/build.py
+.github/
+data/
+scripts/
+tests/
+pytest.ini
+requirements.txt
+source/

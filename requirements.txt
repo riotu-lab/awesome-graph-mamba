@@ -1,4 +1,0 @@
-PyYAML>=6.0
-bibtexparser==1.4.1
-jsonschema>=4.17
-pytest>=7.0
