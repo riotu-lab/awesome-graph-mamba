@@ -1,27 +1,43 @@
 # Exploring Graph Mamba
 
-**A Comprehensive Survey on State-Space Models for Graph Learning — companion website**
+**A Comprehensive Survey on State-Space Models for Graph Learning**
+
+**Companion Website | ACM Computing Surveys (Under Revision)**
 
 Safa Ben Atitallah · Chaima Ben Rabah · Maha Driss · Wadii Boulila · Anis Koubaa
-*ACM Computing Surveys (under revision)*
 
-### [Open the website →](https://riotu-lab.github.io/awesome-graph-mamba/)
+This repository hosts the interactive companion website for *Exploring Graph Mamba: A Comprehensive Survey on State-Space Models for Graph Learning*.
 
-The website presents the survey's abstract and research questions, its figures, the D1–D4 taxonomy, statistics on the
-reviewed literature, and the comparison tables (as dot matrices, heatmaps, cards, and charts), with every reviewed work
-linked to its paper.
+The website provides a structured exploration of Graph Mamba and state-space models for graph learning, bringing together the survey's taxonomy, comparative analyses, research findings, and open challenges.
 
-## Repository
+### 🌐 [Explore the Interactive Website](https://riotu-lab.github.io/awesome-graph-mamba/)
 
-| Path | Content |
-| :--- | :--- |
-| `data/` | Survey database: `papers.yaml` (reviewed works), `taxonomy.yaml` (D1–D4, settings, patterns, abstract), `results.yaml`, `benchmarks.yaml`, `challenges.yaml`, `figures.yaml`, `links.yaml` (paper and dataset links) |
-| `data/generated/` | Snapshots of the manuscript tables and bibliography used to build the site |
-| `scripts/` | Build pipeline; `site_template.html` and `site_figures.py` define the website |
-| `docs/` | The generated website, served by GitHub Pages |
-| `tests/` | Data checks and browser tests of the website |
+## Website Overview
+
+The interactive platform includes:
+
+- **Survey Overview:** Research motivation, objectives, and research questions.
+- **Graph Mamba Taxonomy:** Classification of existing approaches across four dimensions (D1–D4), covering graph representations, sequence construction, graph–SSM integration, and architectural design.
+- **Literature Analysis:** Statistical summaries and trends across the reviewed studies.
+- **Comparative Analysis:** Interactive matrices, heatmaps, charts, and tables comparing Graph Mamba models, methodological characteristics, and reported results.
+- **Applications:** Overview of Graph Mamba approaches across different application domains.
+- **Open Challenges:** Current limitations, research gaps, and future directions.
+
+## Repository Structure
+
+| Path | Description |
+|---|---|
+| `docs/index.html` | Main interactive companion website |
+| `docs/comparison.html` | Additional comparison page |
+| `README.md` | Project overview and documentation |
+| `CITATION.cff` | Citation metadata |
+| `LICENSE` | Repository license |
+
+Additional data and generation scripts may be maintained in the repository.
 
 ## Citation
+
+If you use this survey or its companion website, please cite:
 
 ```bibtex
 @article{benatitallah2026exploring,
@@ -33,4 +49,13 @@ linked to its paper.
 }
 ```
 
-Released under the [MIT License](LICENSE).
+## Maintained By
+
+**Robotics and Internet of Things Laboratory (RIOTU)**  
+Prince Sultan University, Saudi Arabia
+
+**GitHub:** https://github.com/riotu-lab/awesome-graph-mamba
+
+## License
+
+This repository is released under the [MIT License](LICENSE).
