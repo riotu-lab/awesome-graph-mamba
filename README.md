@@ -5,7 +5,7 @@
 Safa Ben Atitallah · Chaima Ben Rabah · Maha Driss · Wadii Boulila · Anis Koubaa
 *ACM Computing Surveys (under revision)*
 
-### [Open the website →](https://safabatitallah.github.io/awesome-graph-mamba/)
+### [Open the website →](https://riotu-lab.github.io/awesome-graph-mamba/)
 
 The website presents the survey's abstract and research questions, its figures, the D1–D4 taxonomy, statistics on the
 reviewed literature, and the comparison tables (as dot matrices, heatmaps, cards, and charts), with every reviewed work
