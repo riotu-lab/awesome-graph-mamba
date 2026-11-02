@@ -100,14 +100,6 @@ If you use this survey or its companion website, please cite:
 }
 ```
 
-## Repository
-
-Maintained under the **Robotics and Internet of Things Laboratory (RIOTU)**, Prince Sultan University, Saudi Arabia.
-
-**GitHub:** https://github.com/riotu-lab/awesome-graph-mamba
-
-**Website:** https://riotu-lab.github.io/awesome-graph-mamba/
-
 ## License
 
 This repository is released under the [MIT License](LICENSE).
